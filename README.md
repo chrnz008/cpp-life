@@ -1,8 +1,8 @@
-#conway's game of life in cpp
+# conway's game of life in cpp
 
 hola this is charan im bored today so i want to make a cool cli thingy that looks good
 so i wanted to iplement the conway's game of life check it out 
-[[en.wikipedia.org/wiki/Conway's_Game_of_Life|here]]   
+[here](en.wikipedia.org/wiki/Conway's_Game_of_Life)
 - it is made in cpp (cuz thats what i know)
 - dont judge me based on my dumb programming choices (im turing complete too!!)
 
