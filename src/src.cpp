@@ -1,8 +1,10 @@
 //charan_0
 
 #include <iostream>
-#include <windows.h>
 #include <vector>
+
+#include "gui.hpp"
+#include "patterns.hpp"
 
 using namespace std;
 
@@ -10,22 +12,12 @@ typedef long long ll;
 const char nl='\n';
 const char spc=' ';
 
-int render=52; //add extra padding
+int render=72; //add extra padding
 
 vector <vector<bool>> realm(render,vector<bool>(render,0)); 
 vector <vector<bool>> present_state(realm);
 
 //draw the map
-void draw_board(){
-
-	for(int i=1;i<render-1;i++){
-		for(int j=1;j<render-1;j++){
-			if(realm[i][j])cout<<"O";
-			else cout<<" ";
-		}
-		cout<<nl;
-	}
-}
 
 //those nasty neighbours
 int neigbourchecker(int r,int c){
@@ -76,38 +68,29 @@ int main(){
 //test
 
 	// Glider pattern - this will move across the screen
-	realm[10][10]=1;
-	realm[11][11]=1;
-	realm[11][12]=1;
-	realm[10][12]=1;
-	realm[9][12]=1;
+	// realm[10][10]=1;
+	// realm[11][11]=1;
+	// realm[11][12]=1;
+	// realm[10][12]=1;
+	// realm[9][12]=1;
 
 	// Alternative: Blinker pattern (uncomment to try)
 	// realm[10][10]=1;
 	// realm[10][11]=1;
 	// realm[10][12]=1;
  											
+		initpattern(realm);
 	present_state=realm;
 
 
-//hides your terminal cursor
- cout << "\033[?25l"; // Hide cursor"]"
+initGUI(render,render, "Conway's Game of Life");
 
-	while(1){
+    while (!WindowShouldClose()) {
+        life_emulation();      // update game
+        draw_board(realm);     // draw GUI
+    }
 
-		system("cls");//on windows
-					  //system("clear"); //on linux and macos
-		draw_board();
-		Sleep(100);
-
-		life_emulation();
-	}
-
-
-
-
-	// int count=neigbourchecker(2,2);
-	// cout<<count;
+    closeGUI();
 
 	return 0;}
 

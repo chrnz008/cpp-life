@@ -6,13 +6,14 @@ so i wanted to iplement the conway's game of life check it out
 - it is made in cpp (cuz thats what i know)
 - dont judge me based on my dumb programming choices (im turing complete too!!)
 
+>dependencies
+
+- [raylib](https://www.raylib.com/)
+
 ------
 > notes
-
-1. the terminal rendering is kinda scrap
+1. added gui using raylib 
 2. didnt make a interface to choose the live positions (will make it soon)
-3. used some unconventional yet easy tricks like ANSI escape sequences for hiding cursor and stuff
-4. it uses windows cls function for clearing the terminal (so win32 API is necessary ) ps:you can get rid of it by using a ANSI sequence 
 
 ------
 another ps:
