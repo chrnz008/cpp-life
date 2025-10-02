@@ -6,12 +6,18 @@ so i wanted to iplement the conway's game of life check it out
 - it is made in cpp (cuz thats what i know)
 - dont judge me based on my dumb programming choices (im turing complete too!!)
 
->dependencies
+------
 
+>dependencies
 - [raylib](https://www.raylib.com/)
 
 ------
-> notes
+
+![example](assets/photo.png)
+
+------
+##TODO
+
 1. added gui using raylib 
 2. didnt make a interface to choose the live positions (will make it soon)
 

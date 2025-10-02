@@ -4,7 +4,7 @@
 #include <vector>
 using namespace std;
 
-const int cellSize = 10;
+const int cellSize = 8;
 
 // Initialize the window
 inline void initGUI(int rows, int cols, const char* title) {
