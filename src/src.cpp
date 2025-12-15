@@ -8,13 +8,13 @@
 
 using namespace std;
 
-typedef long long ll; 
+typedef long long ll;
 const char nl='\n';
 const char spc=' ';
 
 int render=72; //add extra padding
 
-vector <vector<bool>> realm(render,vector<bool>(render,0)); 
+vector <vector<bool>> realm(render,vector<bool>(render,0));
 vector <vector<bool>> present_state(realm);
 
 //draw the map
@@ -78,7 +78,7 @@ int main(){
 	// realm[10][10]=1;
 	// realm[10][11]=1;
 	// realm[10][12]=1;
- 											
+
 		initpattern(realm);
 	present_state=realm;
 
