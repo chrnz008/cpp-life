@@ -9,8 +9,7 @@ the [conways](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) game of lif
 
 ------
 
-![example](assets/photo.png)
-
+[![thumby](assets/photo.png)](assets/rec.mp4)
 ![rec](assest/rec.mp4)
 
 ------
