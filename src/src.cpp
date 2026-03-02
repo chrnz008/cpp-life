@@ -1,6 +1,5 @@
 //charan_0
 
-#include <iostream>
 #include <vector>
 
 #include "gui.hpp"
@@ -8,7 +7,7 @@
 
 using namespace std;
 
-typedef long long ll;
+using ll = long long ;
 const char nl='\n';
 const char spc=' ';
 
