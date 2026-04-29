@@ -92,4 +92,3 @@ initGUI(render,render, "Conway's Game of Life");
     closeGUI();
 
 	return 0;}
-
